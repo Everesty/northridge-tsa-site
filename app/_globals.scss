@@ -1,0 +1,38 @@
+// Specific colors.
+$colors: (
+  primary: #ff5858,
+  secondary: #f857a6
+);
+
+// Breakpoints for media queries.
+$breakpoints: (
+  small: 64rem,
+  medium: 88rem,
+  large: 112rem
+);
+$breakpoint-content-sizes: (
+  small: 45rem,
+  medium: 60rem,
+  large: 75rem
+);
+
+// Easing definitions.
+$easing-time: 0.3s;
+$easing-fn: cubic-bezier(0.215, 0.61, 0.355, 1);
+$easing-time-fn: 0.3s cubic-bezier(0.215, 0.61, 0.355, 1);
+
+// Resets the margin and padding for an element.
+@mixin reset-margin-and-padding {
+  -webkit-margin-before: 0;
+  -webkit-margin-after: 0;
+  -webkit-margin-start: 0;
+  -webkit-margin-end: 0;
+  -webkit-padding-start: 0;
+}
+
+// Media breakpoint.
+@mixin break($size) {
+  @media (max-width: map-get($breakpoints, $size)) {
+    @content;
+  }
+}

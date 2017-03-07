@@ -1,0 +1,123 @@
+@import '../../globals';
+
+@import url('https://fonts.googleapis.com/css?family=Kaushan+Script|Lemonada|Pacifico|Permanent+Marker|Righteous|Rubik+Mono+One');
+
+$header-height: 7.5rem;
+$header-side-margin: 5rem;
+
+#Header {
+  background-color: rgba(255, 255, 255, 0.8);
+
+  position: fixed;
+  height: $header-height;
+  width: 100%;
+  min-width: map-get($breakpoint-content-sizes, small);
+  top: 0px;
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+
+  transition: top $easing-time-fn;
+
+  @include break(small) {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  &:after {
+    background: linear-gradient(90deg, map-get($colors, primary), map-get($colors, secondary));
+
+    position: absolute;
+    height: 8px;
+    bottom: -8px;
+    left: 0;
+    right: 0;
+
+    transition: height $easing-time-fn, bottom $easing-time-fn;
+    content: '';
+  }
+
+  &.collapsed {
+    top: -$header-height;
+    border-bottom-width: 5px;
+
+    &:after {
+      height: 5px;
+      bottom: -5px;
+    }
+  }
+
+  & > .title {
+    margin-left: $header-side-margin;
+
+    @include break(medium) {
+      margin-left: $header-side-margin/2;
+    }
+      
+    @include break(small) {
+      margin: 0;
+
+      text-align: center;
+    }
+
+    & > a {
+      color: map-get($colors, primary);
+
+      line-height: $header-height;
+
+      font-family: 'Rubik Mono One', cursive;
+      font-size: 2.5rem;
+      text-decoration: none;
+
+      @include break(medium) {
+        font-size: 2rem;
+      }
+
+      @include break(small) {
+        line-height: $header-height/2;
+      }
+    }
+  }
+
+  & > .navLinks {
+    margin-right: $header-side-margin;
+
+    list-style-type: none;
+
+    @include break(medium) {
+      margin-right: $header-side-margin/2;
+    }
+    
+    @include break(small) {
+      margin: 0;
+
+      text-align: center;
+    }
+
+    & > a {
+      color: map-get($colors, secondary);
+
+      line-height: $header-height;
+      margin: 0 1rem;
+
+      font-family: 'Kaushan Script', cursive;
+      font-size: 2rem;
+      text-decoration: none;
+
+      @include break(medium) {
+        font-size: 1.5rem;
+      }
+
+      @include break(small) {
+        line-height: $header-height/2;
+      }
+
+      &.active {
+        text-decoration: underline;
+        //border-bottom: 2px solid #f857a6;
+      }
+    }
+  }
+}

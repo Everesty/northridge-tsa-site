@@ -1,0 +1,48 @@
+{
+  "name": "northridge-tsa-site",
+  "version": "1.0.0",
+  "private": true,
+  "description": "The website submitted for the TSA Webmaster competition.",
+  "author": "Calvin Watford",
+  "contributors": [
+    "Dylan Buel",
+    "Nathan Tymofichuck"
+  ],
+  "license": "MIT",
+  "main": "server.js",
+  "scripts": {
+    "start": "webpack-dev-server",
+    "dev-production": "cross-env NODE_ENV=production webpack-dev-server --env.production=true",
+    "build": "cross-env NODE_ENV=production webpack --env.production=true"
+  },
+  "dependencies": {
+    "babel-polyfill": "^6.23.0",
+    "babel-runtime": "^6.23.0",
+    "react": "^15.4.2",
+    "react-dom": "^15.4.2",
+    "react-hot-loader": "^3.0.0-beta.6",
+    "react-router-dom": "^4.0.0-beta.7"
+  },
+  "devDependencies": {
+    "babel-core": "^6.23.1",
+    "babel-eslint": "^7.1.1",
+    "babel-loader": "^6.3.2",
+    "babel-preset-env": "^1.2.1",
+    "babel-preset-react": "^6.23.0",
+    "copy-webpack-plugin": "^4.0.1",
+    "cross-env": "^3.2.3",
+    "css-loader": "^0.26.2",
+    "eslint": "^3.17.0",
+    "eslint-config-airbnb": "^14.1.0",
+    "eslint-plugin-import": "^2.2.0",
+    "eslint-plugin-jsx-a11y": "^4.0.0",
+    "eslint-plugin-react": "^6.10.0",
+    "extract-text-webpack-plugin": "^2.1.0",
+    "html-webpack-plugin": "^2.28.0",
+    "node-sass": "^4.5.0",
+    "sass-loader": "^6.0.2",
+    "style-loader": "^0.13.2",
+    "webpack": "^2.2.1",
+    "webpack-dev-server": "^2.4.1"
+  }
+}
