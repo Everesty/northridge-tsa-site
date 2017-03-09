@@ -1,0 +1,46 @@
+@import 'functions';
+
+@mixin font-face($name, $url, $weight: 500, $italic: false, $format: 'truetype') {
+  @font-face {
+    font-family: $name;
+    font-style: if($italic, italic, normal);
+    font-weight: $weight;
+    src: url($url) format($format);
+  }
+}
+
+@mixin declare-font($name, $url-format, $files, $format: 'truetype') {
+  @each $file, $value in $files {
+    @if type-of($value) == 'number' {
+      // Value is weight.
+      @include font-face(
+        $name,
+        str-replace($url-format, '{FILE}', $file),
+        $value,
+        false,
+        $format
+      );
+    }
+    @if type-of($value) == 'map' {
+      // Value might include an option for italic.
+      @include font-face(
+        $name,
+        str-replace($url-format, '{FILE}', $file),
+        map-get($value, 'weight'),
+        map-get($value, 'italic'),
+        $format
+      );
+    }
+  }
+}
+
+
+@include declare-font('Quicksand', '/static/fonts/Quicksand/Quicksand-{FILE}.ttf', (
+  'Light': 300,
+  'Regular': 400,
+  'Medium': 500,
+  'Bold': 700
+));
+@include font-face('Baloo Bhaina', '/static/fonts/BalooBhaina/BalooBhaina-Regular.ttf', 400);
+@include font-face('Kaushan Script', '/static/fonts/KaushanScript/KaushanScript-Regular.ttf', 400);
+@include font-face('Rubik Mono One', '/static/fonts/RubikMonoOne/RubikMonoOne-Regular.ttf', 400);

@@ -1,65 +1,18 @@
 @import '../../globals';
 @import '../Header/Header';
 
-// Quicksand font.
-@font-face {
-  font-family: 'Quicksand';
-  font-style: normal;
-  font-weight: 300;
-  src: url(/static/fonts/Quicksand/Quicksand-Light.ttf) format('truetype');
-}
-@font-face {
-  font-family: 'Quicksand';
-  font-style: normal;
-  font-weight: 400;
-  src: url(/static/fonts/Quicksand/Quicksand-Regular.ttf) format('truetype');
-}
-@font-face {
-  font-family: 'Quicksand';
-  font-style: normal;
-  font-weight: 500;
-  src: url(/static/fonts/Quicksand/Quicksand-Medium.ttf) format('truetype');
-}
-@font-face {
-  font-family: 'Quicksand';
-  font-style: normal;
-  font-weight: 700;
-  src: url(/static/fonts/Quicksand/Quicksand-Bold.ttf) format('truetype');
-}
-
-// Lora font.
-@font-face {
-  font-family: 'Lora';
-  font-style: normal;
-  font-weight: 400;
-  src: url(/static/fonts/Lora/Lora-Regular.ttf) format('truetype');
-}
-@font-face {
-  font-family: 'Lora';
-  font-style: italic;
-  font-weight: 400;
-  src: url(/static/fonts/Lora/Lora-Italic.ttf) format('truetype');
-}
-@font-face {
-  font-family: 'Lora';
-  font-style: normal;
-  font-weight: 700;
-  src: url(/static/fonts/Lora/Lora-Bold.ttf) format('truetype');
-}
-@font-face {
-  font-family: 'Lora';
-  font-style: italic;
-  font-weight: 700;
-  src: url(/static/fonts/Lora/Lora-BoldItalic.ttf) format('truetype');
-}
+// TODO fonts:
+// + Rubik Mono One
+// + Kaushan Script
 
 body {
   font-family: 'Quicksand', sans-serif;
   font-weight: 400;
   font-size: 1.5rem;
 
-  min-width: map-get($breakpoint-content-sizes, small);
+  min-width: map-get($content-sizes, small);
   margin: 0;
+  padding-top: $header-height + 0.5rem;
 
   @include break(medium) {
     font-size: 1.4rem;
@@ -74,16 +27,79 @@ body {
   background-color: lighten(map-get($colors, secondary), 10%);
 }
 
-#content {
-  width: map-get($breakpoint-content-sizes, large);
-  margin: $header-height + 1.5rem auto 1.5rem auto;
-  padding: 0 1.5rem;
+@mixin header-sizes($large-size, $medium-size, $small-size) {
+  font-size: $large-size;
+  line-height: $large-size;
+  margin-top: $large-size/2;
 
   @include break(medium) {
-    width: map-get($breakpoint-content-sizes, medium);
+    font-size: $medium-size;
+    line-height: $medium-size;
+    margin-top: $medium-size/2;
   }
 
   @include break(small) {
-    width: map-get($breakpoint-content-sizes, small);
+    font-size: $small-size;
+    line-height: $small-size;
+    margin-top: $small-size/2;
+  }
+}
+
+h1, h2, h3, h4, h5, h6 {
+  @include reset-margin-and-padding;
+  font-family: 'Baloo Bhaina', cursive;
+  font-weight: 500;
+}
+
+h1 { @include header-sizes(3.5rem, 3.25rem, 3rem); }
+h2 { @include header-sizes(3rem, 2.75rem, 2.5rem); }
+h3 { @include header-sizes(2.5rem, 2.25rem, 2rem); }
+h4 { @include header-sizes(2rem, 1.75rem, 1.5rem); }
+h5 { @include header-sizes(1.5rem, 1.25rem, 1rem); }
+h6 { @include header-sizes(1rem, 0.9rem, 0.8rem); }
+
+p {
+  @include reset-margin-and-padding;
+
+  margin: 0.8rem 0;
+}
+
+a {
+  color: map-get($colors, primary);
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+hr {
+  @include reset-margin-and-padding;
+
+  margin: 1rem 0;
+
+  border: none;
+  border-bottom: 1px solid #ccc;
+
+  &.wide-divider {
+    background: linear-gradient(90deg, map-get($colors, primary), map-get($colors, secondary));
+
+    border: none;
+
+    height: 8px;
+  }
+}
+
+.content {
+  width: map-get($content-sizes, large);
+  margin: 1.5rem auto;
+  padding: 0 1.5rem;
+
+  @include break(medium) {
+    width: map-get($content-sizes, medium);
+  }
+
+  @include break(small) {
+    width: map-get($content-sizes, small);
   }
 }

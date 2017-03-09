@@ -1,0 +1,93 @@
+@import '../../globals';
+
+#AboutPage {
+  & > section.about-section {
+    width: 100%;
+
+    & > a {
+      color: #fff;
+      text-decoration: none;
+
+      & > div {
+        width: map-get($content-sizes, large);
+        margin: 0 auto;
+        padding: 7.5rem 0;
+
+        @include break(medium) {
+          width: map-get($content-sizes, medium);
+        }
+
+        @include break(small) {
+          width: map-get($content-sizes, small);
+        }
+
+        & > .section-name, & > .action-call {
+          font-family: 'Rubik Mono One', cursive;
+          font-size: 4rem;
+
+          @include break(medium) {
+            font-size: 3rem;
+          }
+
+          @include break(small) {
+            font-size: 2.5rem;
+          }
+        }
+      }
+    }
+
+    &.northridge {
+      background: linear-gradient(
+        90deg,
+        mix(map-get($colors, primary), map-get($colors, secondary), 50%),
+        map-get($colors, secondary)
+      );
+
+      .action-call {
+        float: right;
+        margin-right: 4rem;
+
+        @include break(medium) {
+          margin-right: 3rem;
+        }
+
+        @include break(small) {
+          margin-right: 2.5rem;
+        }
+      }
+
+      &:hover {
+        .action-call {
+          margin-right: 0;
+        }
+      }
+    }
+    &.tsa {
+      text-align: right;
+      background: linear-gradient(
+        90deg,
+        map-get($colors, primary),
+        mix(map-get($colors, primary), map-get($colors, secondary), 50%)
+      );
+
+      .action-call {
+        float: left;
+        margin-left: 4rem;
+
+        @include break(medium) {
+          margin-left: 3rem;
+        }
+
+        @include break(small) {
+          margin-left: 2.5rem;
+        }
+      }
+
+      &:hover {
+        .action-call {
+          margin-left: 0;
+        }
+      }
+    }
+  }
+}

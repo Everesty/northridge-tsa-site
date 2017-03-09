@@ -1,3 +1,5 @@
+@import 'style/fonts';
+
 // Specific colors.
 $colors: (
   primary: #ff5858,
@@ -10,7 +12,7 @@ $breakpoints: (
   medium: 88rem,
   large: 112rem
 );
-$breakpoint-content-sizes: (
+$content-sizes: (
   small: 45rem,
   medium: 60rem,
   large: 75rem
@@ -30,7 +32,7 @@ $easing-time-fn: 0.3s cubic-bezier(0.215, 0.61, 0.355, 1);
   -webkit-padding-start: 0;
 }
 
-// Media breakpoint.
+// Media breakpoint stuff
 @mixin break($size) {
   @media (max-width: map-get($breakpoints, $size)) {
     @content;

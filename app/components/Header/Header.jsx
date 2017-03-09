@@ -39,7 +39,7 @@ export default class Header extends React.Component {
   }
 
   updateCollapsed() {
-    if (!this.mouseOver && window.pageYOffset > 80) {
+    if (!this.mouseOver && window.pageYOffset > document.getElementById('Header').clientHeight) {
       this.setState({ collapsed: true });
     } else {
       this.setState({ collapsed: false });
@@ -61,7 +61,6 @@ export default class Header extends React.Component {
         <div className="navLinks">
           <NavLink to="/about" activeClassName="active">About</NavLink>
           <NavLink to="/members" activeClassName="active">Members</NavLink>
-          <NavLink to="/calendar" activeClassName="active">Calendar</NavLink>
           <NavLink to="/augmented-reality" activeClassName="active">Augmented Reality</NavLink>
         </div>
       </div>

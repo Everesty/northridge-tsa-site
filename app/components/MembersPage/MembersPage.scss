@@ -1,0 +1,98 @@
+@import '../../globals';
+
+#MembersPage {
+  .member-list {
+    @include reset-margin-and-padding;
+
+    margin-top: 1rem;
+    font-size: 1.2rem;
+
+    column-count: 4;
+    list-style: none;
+  }
+
+  .members-grid {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    & > .member {
+      width: 20%;
+      margin: 1rem 0;
+
+      text-align: center;
+
+      & > img {
+        width: 10rem;
+        height: 10rem;
+      
+        border-radius: 100%;
+
+        @include break(medium) {
+          width: 7.5rem;
+          height: 7.5rem;
+        }
+
+        @include break(small) {
+          width: 5rem;
+          height: 5rem;
+        }
+      }
+
+      & > div {
+        width: 100%;
+      }
+
+      & > .name {
+        font-size: 1.2rem;
+
+        @include break(medium) {
+          font-size: 1.1rem;
+        }
+
+        @include break(small) {
+          font-size: 1rem;
+        }
+      }
+    }
+
+    &.leadership {
+      & > .member {
+        width: percentage(1/3);
+
+        & > img {
+          width: 15rem;
+          height: 15rem;
+
+          @include break(medium) {
+            width: 12.5rem;
+            height: 12.5rem;
+          }
+
+          @include break(small) {
+            width: 10rem;
+            height: 10rem;
+          }
+        }
+
+        & > .name {
+          font-weight: 700;
+          font-size: 1.5rem;
+
+          @include break(medium) {
+            font-size: 1.375rem;
+          }
+
+          @include break(small) {
+            font-size: 1.25rem;
+          }
+        }
+
+        & > .title {
+          font-size: 1rem;
+        }
+      }
+    }
+  }
+}

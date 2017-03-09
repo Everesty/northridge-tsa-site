@@ -1,17 +1,15 @@
 @import '../../globals';
 
-@import url('https://fonts.googleapis.com/css?family=Kaushan+Script|Lemonada|Pacifico|Permanent+Marker|Righteous|Rubik+Mono+One');
-
 $header-height: 7.5rem;
 $header-side-margin: 5rem;
 
 #Header {
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color: #fff;//rgba(255, 255, 255, 0.8);
 
   position: fixed;
   height: $header-height;
   width: 100%;
-  min-width: map-get($breakpoint-content-sizes, small);
+  min-width: map-get($content-sizes, small);
   top: 0px;
 
   display: flex;

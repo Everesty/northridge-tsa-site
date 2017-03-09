@@ -1,1 +1,98 @@
-// TODO
+@import '../../globals';
+
+#HomePage {
+  & > section {
+    margin: 1.5rem auto;
+  }
+
+  & > .jumbo {
+    background: linear-gradient(90deg, map-get($colors, primary), map-get($colors, secondary));
+    color: #fff;
+
+    margin-top: 0;
+    width: 100%;
+    height: 30rem;
+
+    font-family: 'Rubik Mono One', cursive;
+    font-size: 4rem;
+    text-align: center;
+    line-height: 30rem;
+
+    @include break(medium) {
+      height: 25rem;
+
+      font-size: 3rem;
+      line-height: 25rem;
+    }
+
+    @include break(small) {
+      height: 20rem;
+
+      font-size: 2.5rem;
+      line-height: 20rem;
+    }
+  }
+
+  .virtues {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+    & > div {
+      width: 15rem;
+      height: 15rem;
+      padding: 2rem;
+
+      color: map-get($colors, primary);
+      text-align: center;
+
+      border: 8px solid map-get($colors, primary);
+      border-radius: 100%;
+
+      flex: 0 0 auto;
+
+      @include break(medium) {
+        width: 12.5rem;
+        height: 12.5rem;
+        padding: 1.5rem;
+
+        border-width: 6px;
+      }
+
+      @include break(small) {
+        width: 10rem;
+        height: 10rem;
+        padding: 1rem;
+
+        border-width: 5px;
+      }
+
+      &:nth-child(2) {
+        color: mix(map-get($colors, primary), map-get($colors, secondary), 50%);
+
+        border-color: mix(map-get($colors, primary), map-get($colors, secondary), 50%);
+      }
+      &:nth-child(3) {
+        color: map-get($colors, secondary);
+
+        border-color: map-get($colors, secondary);
+      }
+
+      & > img {
+        width: 10rem;
+        height: 10rem;
+
+        @include break(medium) {
+          width: 8rem;
+          height: 8rem;
+        }
+
+        @include break(small) {
+          width: 6rem;
+          height: 6rem;
+        }
+      }
+    }
+  }
+}

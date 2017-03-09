@@ -65,7 +65,9 @@ module.exports = function webpackConfig(env) {
         }
       }),
       new CopyWebpackPlugin([
-        { from: path.resolve(__dirname, 'app/static/'), to: 'static/' }
+        // If you don't see a "static" directory in "dist" then run `npm run build` instead of just
+        // `webpack`; the environment _must_ be set for this plugin to be added
+        { from: 'app/static/', to: 'static/' }
       ]),
       new ExtractTextPlugin('styles.css')
     );
