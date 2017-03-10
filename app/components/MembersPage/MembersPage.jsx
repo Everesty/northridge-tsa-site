@@ -2,10 +2,10 @@ import React from 'react';
 
 import './MembersPage.scss';
 
-import memberInfos from '../../data/TSA_Members.json';
+import tsaMembers from '../../data/tsaMembers.hjson';
 
 function nameToImgSrc(name) {
-  return `/static/images/members/${name.toLowerCase().replace(' ', '_')}.png`;
+  return `/static/images/members/${name.toLowerCase().replace(' ', '_').replace('.', '')}.png`;
 }
 
 const Member = ({ name, img, title }) => {
@@ -32,7 +32,7 @@ Member.defaultProps = {
 };
 
 export default () => {
-  const leadershipMembers = memberInfos
+  const leadershipMembers = tsaMembers
     .filter(member => member.isLeadership)
     .map(member => (
       <Member
@@ -42,7 +42,7 @@ export default () => {
       />
     ));
 
-  const activeMembers = memberInfos
+  const activeMembers = tsaMembers
     .filter(member => !member.isLeadership && member.isActive)
     .map(member => (
       <Member
@@ -51,7 +51,7 @@ export default () => {
       />
     ));
 
-  const inactiveMembers = memberInfos
+  const inactiveMembers = tsaMembers
     .filter(member => !member.isLeadership && !member.isActive)
     .map(member => (
       <Member name={member.name} />

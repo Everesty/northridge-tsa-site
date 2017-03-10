@@ -1,0 +1,472 @@
+[
+  {
+    name: Nic Moreno
+    id: moreno
+    website: http://www.davis.k12.ut.us/Domain/11087
+    email: nmoreno@dsdmail.net
+    photo: /static/images/teachers/moreno.jpg
+    photoSquare: /static/images/teachers/moreno_square.jpg
+    room: /static/images/northridge/moreno_lab.jpg
+    courses: {
+      "Robotics 1": {
+        prerequisites: [ "None" ],
+        description:
+          '''
+          The first in a sequence of courses that prepares individuals with a
+          lab-based, hands-on curriculum combining electrical, mechanical and
+          engineering principles. Students will learn to design, build,
+          program, and control robotic devices. A rigorous study and
+          application of electrical components will include: sources of energy,
+          electrical safety, use and identification of basic electronic
+          components, sensors and actuators. Engineering concepts will include:
+          mechanical design, prototype development, design testing,
+          programming, and proper engineering documentation.
+
+          Students will:
+          * Follow safety practices
+          * Identify the history and application of technology and engineering
+            as it applies to robotics and automated systems
+          * Be able to create, and interpret fundamental programming of robots
+            and automated systems
+          * Work in teams to design, build, and present a robotics project
+          * Understand, apply, and document the Engineering Design Process
+          * Document the design process in an engineering notebook
+          * Understand and develop positive work ethics, communication skills,
+            and leadership skills
+          '''
+      }
+      "Robotics 2": {
+        prerequisites: [ "Robotics 1" ],
+        description:
+          '''
+          The second in a sequence of courses that prepares individuals with a
+          lab-based, hands-on curriculum combining electrical, mechanical and
+          engineering principles. Students will learn to design, build,
+          program, and control robotic devices. A rigorous study and
+          application of electrical concepts will include: sources of energy,
+          electrical safety, use and identification of basic electronic
+          components, sensors and actuators. Engineering concepts will include:
+          mechanical design, prototype development, design testing,
+          programming, and proper engineer documentation.
+
+          Students will:
+          * Follow safety practices
+          * Identify the ethical and social impacts of robotics and automation
+          * Be able to identify and report on educational pathways and career
+            opportunities in robotics and automation
+          * Understand and develop positive work ethics, communication skills,
+            and leadership skills
+          * Students will be able to create program code for robots and
+            automated systems
+          * Understand the fundamentals of electricity as applied to robots
+          * Be able to identify, understand, and utilize mechanical advantage
+            and efficiency to perform robotic tasks
+          * Work in teams to design, build, and present a final robotics project
+          '''
+      }
+      "CE Civil Engineering & Architecture": {
+        prerequisites: [
+          "Intro to Engineering",
+          "Principles of Engineering"
+        ],
+        description:
+          '''
+          Civil Engineering & Architecture is an introduction to important
+          aspects of building and site design and development. Students apply
+          math, science, and standard engineering practices to design both
+          residential and commercial projects and document their work using 3-D
+          architecture design software.
+
+          Students will:
+          * Gain an awareness of the development of Civil Engineering and
+            Architecture
+          * Learn about the variety of careers in Civil Engineering and
+            Architecture
+          * Understand how a typical residence is framed
+          * Be able to estimate a small structure’s cost
+          * Use a professional approach to basic residential design
+          * Consider materials, building codes, zoning restrictions, and energy
+            considerations in their designs
+          * Calculate simple loads and stresses
+          * Consider basic utility services for a typical building
+          * Existing site features during design
+          * Develop skills in project management
+          * Make a professional presentation of their design
+          '''
+      }
+      "CE Digital Electronics": {
+        prerequisites: [
+          "Intro to Engineering",
+          "Principles of Engineering",
+          "Instructors Approval"
+        ],
+        description:
+          '''
+          Digital Electronics is an introduction to applied digital logic, a
+          key element of careers in engineering and engineering technology.
+          This course explores the smart circuits found in watches,
+          calculators, video games, and computers. Students use
+          industry-standards computer software in testing and analyzing digital
+          circuitry. They design circuits to solve problems, export their
+          designs to a printed circuit auto-routing program that generates
+          printed circuit boards, and use appropriate components to build their
+          designs. Students use mathematics and science in solving real-world
+          engineering problems.
+
+          Students will learn about:
+          * The fundamentals of digital electronics
+          * Number systems
+          * Logic gates
+          * Boolean Algebra
+          * Circuit design
+          * Binary addition
+          * Flip-Flops
+          * Shift registers & counters
+          * Families & specifications
+          * Microprocessors
+          '''
+      }
+      "CE Engineering Design & Development": {
+        prerequisites: [
+          "Intro to Engineering",
+          "Principles of Engineering",
+          "Instructors Approval"
+        ],
+        description:
+          '''
+          In this capstone course, students will work in teams to develop an
+          original solution to a valid open-ended technical problem by applying
+          the engineering design process. They will research, validate, and
+          justify a technical problem. Each team will design, build, and test
+          their solution. While progressing through the engineering design
+          process, students will work closely with experts and will continually
+          hone their organizational, communication and interpersonal skills,
+          their creative and problem solving abilities, and their understanding
+          of the design process. Finally, student teams will present and defend
+          their original solution to an outside panel.
+
+          Students will:
+          * Research a problem
+          * Functioning as part of a team, design a solution to an engineering
+            problem
+          * Create a prototype and a testing plan
+          * Evaluate and reflect on their design process
+          * Develop a marketing plan
+          * Develop a production plan
+          * Report on each step of their design process
+          '''
+      }
+      "Aerospace Engineering": {
+        prerequisites: [
+          "Intro to Engineering",
+          "Principles of Engineering",
+          "Instructors Approval"
+        ],
+        description:
+          '''
+          This course propels students’ learning in the fundamentals of
+          atmospheric and space flight. As they explore the physics of flight,
+          students bring the concepts to life by designing an airfoil,
+          propulsion system, and rockets. They learn basic orbital mechanics
+          using industry-standard software. They also explore robot systems
+          through projects such as remotely operated vehicles.
+
+          Students will:
+          * Gain an awareness of the development of Aerospace Engineering
+          * Know the basic forces of flight and how they are controlled
+          * Have a basic understanding of navigation
+          * Gain an understanding of materials used in Aerospace Engineering
+          * Have a basic understanding of rocket propulsion and space travel
+          * Consider human factors in design
+          * Learn about manmade objects in space
+          * Make elementary calculations describing orbital motion
+          * Consider and improve efficiencies in design
+          * Simulate a satellite mapping mission
+          * Learn about the variety of careers in Aerospace Engineering
+          '''
+      }
+    }
+    shortDesc: Specialized Engineering, Robots, and everything in between.
+    description:
+      '''
+      Host to the biggest classroom in the school (barring gym classes), Mr.
+      Moreno teaches the majority of the specialized engineering classes at
+      Northridge, like Aerospace, Civil Engineering, and Engineering Design &
+      Development. He also teaches the Robotics and Digital Electronics
+      courses.
+
+      Meoreno is also the official advisor for Northridge's TSA club and
+      [VEX Robotics](http://www.vexrobotics.com/) teams.
+      '''
+  },
+  {
+    name: Derrek Bitner
+    id: bitner
+    website: http://www.davis.k12.ut.us/Domain/10953
+    email: dbitner@dsdmail.net
+    photo: /static/images/teachers/bitner.jpg
+    photoSquare: /static/images/teachers/bitner_square.jpg
+    courses: {
+      "AP Computer Science Principles": {
+        prerequisites: [ "None" ],
+        description:
+          '''
+          *Taken from the [College Board](https://apstudent.collegeboard.org/apcourse/ap-computer-science-principles/course-details)
+          description of the course.*
+
+          AP Computer Science Principles introduces you to the foundations of
+          computer science with a focus on how computing powers the world.
+          Along with the fundamentals of computing, you will learn to analyze
+          data, create technology that has a practical impact, and gain a
+          broader understanding of how computer science impacts people and
+          society.
+
+          The AP CSP course is organized around seven big ideas, which are
+          essential to studying computer science:
+          1. Creativity
+          2. Abstraction
+          3. Data and Information
+          4. Algorithms
+          5. Programming
+          6. The Internet
+          7. Global Impact
+          '''
+      }
+      "CE Video Game Design": {
+        prerequisites: [ "None" ],
+        description:
+          '''
+          This course examines and analyzes the history of interactive
+          entertainment and its technology (video games, computer games, and
+          simulations) and their impact on an individual and society from the
+          perspective of the game designer and player. Students take a critical
+          look at the artistic, technical, cultural, economic and social
+          aspects of this expressive medium. Students will analyze how advances
+          in hardware have driven game design and capability. 
+          '''
+      }
+      "Computer Programming 1": {
+        prerequisites: [ "None" ],
+        description:
+          '''
+          An introductory course in computer programming/software engineering
+          and applications. The course introduces students to the fundamentals
+          of computer programming. Students will learn to design, code, and
+          test their own programs while applying mathematical concepts. The
+          class will learn to program in both Scratch and Java.
+          '''
+      }
+      "Exploring Computer Science": {
+        prerequisites: [ "None" ],
+        description:
+          '''
+          This course has been designed to teach students how computer systems
+          work, and the logic of problem solving, in an incredibly fun and fast
+          paced environment. With activities designed to inspire students
+          creativity and get them excited about computers. This is a class
+          based on participation, if you participate you succeed.
+          '''
+      }
+    }
+    shortDesc: The best geek a student could ever want.
+    description:
+      '''
+      Recently nominated as the Utah New IT teacher of the Year, Mr. Bitner
+      enjoys teaching Computer Science and Programming at Northridge.
+
+      After going through an early midlife crisis after a basketball game,
+      Bitner made the decision to give up his well-paying job to go into
+      teaching the next generation of computer scientists what to expect going
+      into a CS job.
+      '''
+  },
+  {
+    name: Kael Harris
+    id: harris
+    website: http://www.davis.k12.ut.us/Domain/11090
+    email: kaeharris@dsdmail.net
+    photo: /static/images/teachers/harris.jpg
+    photoSquare: /static/images/teachers/harris_square.jpg
+    courses: {
+      "CE Introduction to Engineering Design": {
+        prerequisites: [ "None" ],
+        description:
+          '''
+          Introduction to Engineering Design (IED) is a high school level
+          course that is appropriate for 9th through 12th grade students who
+          are interested in design and engineering. The major focus of the IED
+          course is to expose students to design process, research and
+          analysis, teamwork, communication methods, global and human impacts,
+          engineering standards, and technical documentation. IED gives
+          students the opportunity to develop skills and understanding of
+          course concepts through activity-, project-, and problem-based (APPB)
+          learning. Used in combination with a teaming approach, APPB-learning
+          challenges students to continually hone their interpersonal skills,
+          creative abilities and understanding of the design process. It also
+          allows students to develop strategies to enable and direct their own
+          learning, which is the ultimate goal of education.
+          '''
+      }
+      "CE Principles of Egineering": {
+        prerequisites: [ "Intro to Engineering" ],
+        description:
+          '''
+          Principles of Engineering (POE) is a high school level course that is
+          appropriate for 11th and 12th grade students who are interested in
+          Principles of Engineering. The major focus of the POE course is to
+          expose students to statics, energy, robotics, programming, research
+          and analysis, teamwork, communication methods, global and human
+          impacts, engineering standards, and technical documentation. POE
+          gives students the opportunity to develop skills and understanding of
+          course concepts through activity-, project-, and problem-based (APPB)
+          learning. Used in combination with a teaming approach, APPB-learning
+          challenges students to continually hone their interpersonal skills,
+          creative abilities and understanding of the design process. It also
+          allows students to develop strategies to enable and direct their own
+          learning, which is the ultimate goal of education.
+          '''
+      }
+    }
+    shortDesc: Handles the large number of beginning engineers.
+    description:
+      '''
+      As a [Project Lead the Way](https://www.pltw.org/) instructor, Mr. Harris
+      is one of the first teachers any newcommers to engineering will meet at
+      Northridge. With his unique sense of humor will get even the shyest of
+      students interested and involved in his classes.
+
+      After taking Introduction to Engineering Design, studens will usually
+      follow suit and take Principles of Engineering, the follow-up course
+      to IED.
+      '''
+  },
+  {
+    name: Cathy Bell
+    id: bell
+    website: http://www.davis.k12.ut.us/page/4456
+    email: cbell@dsdmail.net
+    photo: /static/images/teachers/bell.jpg
+    photoSquare: /static/images/teachers/bell_square.jpg
+    courses: {
+      "CE Advanced Web Design": {
+        prerequisites: [ "None" ],
+        description:
+          '''
+          Understand the technicalities of the World Wide Web and the Internet.
+          Plan, design, and implement a successful web site using current web
+          technologies. Topics covered include audience analysis, information
+          architecture, wireframing, prototyping, responsive design, usability
+          and accessibility, testing, and analytics.
+          '''
+      }
+      "CE Digital Media": {
+        prerequisites: [ "None" ],
+        description:
+          '''
+          This course is designed to introduce students to the basics of
+          digital media and the evolving industry. This is the first course in
+          the Digital Media Associates and Bachelors degree programs in Digital
+          Media. The course is designed to give you an in-depth introduction to
+          digital media tools and production techniques. The divisions of
+          digital media will be discussed along with computer applications that
+          are considered industry standards. This course will familiarize you
+          with basic techniques and with the hardware and software tools used
+          to create the various media for powerful digital media productions.
+          Programs such as Adobe Photoshop, Adobe Illustrator, Adobe Premiere,
+          and Adobe Audition are employed to give you hands-on experience. This
+          may be a challenging course for some students; and if you allow your
+          creativity to ignite, it will be a lot of fun as well. Some "homework"
+          will be necessary, typically in the lab during open hours.
+          '''
+      }
+      "CE Computer Tech 2": {
+        prerequisites: [ "Computer Technology (grade B- or higher)" ],
+        description:
+          '''
+          Students will use current software to produce correctly formatted
+          research papers with an accepted academic reference format, to
+          produce effective employment documents such as a resume and a cover
+          letter, and to use multiple collaboration mediums to effectively
+          share, communicate, and collaborate with their peers.  Students will
+          use currrent software/technology to manage content on local devices
+          and in the cloud, to manage their web identity and presence according
+          to e-safety, security, and privacy best practices and standards, and
+          to manipulate multiple computing platforms to troubleshoot problems.
+          Students will protect local devices from security threats including
+          viruses, malware, and adware using current best practices and
+          technologies. Students will also manipulate and analyze data using
+          various software applications and basic programming, organize data
+          using graphical methods such as charts and infographics, and create
+          an effective, well-designed presentation.  Keyboarding 25 wpm
+          recommended.
+          '''
+      }
+      "Computer Tech": {
+        prerequisites: [ "Satisfactory Keyboarding Skills (15+ wpm)" ],
+        description:
+          '''
+          Topics covered in this class include: Technology operations and
+          concepts, productivity operations including: document processing,
+          spreadsheets, presentations and database interactions, ethics,
+          on-line information resources, electronic communications, networks,
+          digital citizenship, and course integration throughout general
+          education classes.
+
+          Computer literacy is a foundational element of success in today's
+          technology-driven world. This course is intended for students to
+          learn concepts associated with key application software, basic
+          computing fundamentals, and ethics and appropriate behavior while
+          using technology as a tool in the classroom and in life. This course
+          is aligned with national and international standards and the Utah
+          Core to prepare students across multiple levels of skills. Students
+          have the opportunity to test out of this course by successfully
+          passing Certiport’s IC3 GS4 certifications.
+          '''
+      }
+      "3D Graphics": {
+        prerequisites: [ "None" ],
+        description:
+          '''
+          3D Graphics is a semester course. Students will use 3D graphics
+          software to produce 3D models. This course will introduce students to
+          2D and 3D modeling, the creation and application of textures, mapping,
+          lighting, camera techniques, and rendering of 3D models. This class
+          uses Autodesk Maya 2015 for 3D development.
+          '''
+      }
+    }
+    shortDesc: The one and only Digital Literacy teacher.
+    description:
+      '''
+      ---
+      '''
+  },
+  {
+    name: Allen Miller
+    id: miller
+    website: http://www.davis.k12.ut.us/Page/62008
+    email: almiller@dsdmaill.net
+    photo: /static/images/teachers/miller.jpg
+    photoSquare: /static/images/teachers/miller_square.jpg
+    courses: []
+    shortDesc: Not a teacher, but an honorable mention.
+    description: 
+      '''
+      Mr. Miller is the _only_ School Technology Specialist at Northridge, and
+      does a fantastic job for being the only one. It's almost impossible to
+      walk into any room in any of the four buildings and not have at least one
+      computer in it.
+
+      To help you understand the amount of work he has to deal with, here's an
+      approximation of all the computers in the school:
+
+      * 9 classrooms with computer labs (specific teachers & general use).
+      * Library/Media Center (with a computer lab).
+      * All faculty computers (office, cafeteria, and teacher computers).
+        * Many classrooms also contain a [SMART Board](https://education.smarttech.com/).
+      * Auditorium computers.
+
+      That's a lot for just one man.
+      '''
+  }
+]

@@ -1,0 +1,77 @@
+@import '../../globals';
+
+#AboutClubPage {
+  .activity-images {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width: 100%;
+    height: 30rem;
+
+    position: relative;
+
+    overflow: hidden;
+
+    @for $i from 1 through 3 {
+      &.images-#{nth(('solo', 'duet', 'trio'), $i)} > div {
+        width: percentage(1/$i);
+
+        & > img {
+          left: percentage(1 / (2 * $i));
+          transform: translateX(percentage(-1 / (2 * $i)));
+        }
+      }
+    }
+
+    @include break(medium) {
+      height: 25rem;
+    }
+
+    @include break(small) {
+      height: 20rem;
+    }
+
+    & > div {
+      position: relative;
+      overflow: hidden;
+
+      & > img {
+        position: absolute;
+        width: 100%;
+      }
+    }
+  }
+
+  .wide-divider {
+    margin-bottom: 0;
+  }
+
+  .content > .right-img {
+    float: right;
+    margin: 0.5rem;
+
+    &.tall {
+      height: 30rem;
+
+      @include break(medium) {
+        height: 25rem;
+      }
+
+      @include break(small) {
+        height: 20rem;
+      }
+    }
+
+    &.wide {
+      width: 30rem;
+
+      @include break(medium) {
+        width: 25rem;
+      }
+
+      @include break(small) {
+        width: 20rem;
+      }
+    }
+  }
+}

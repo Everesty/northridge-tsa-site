@@ -24,12 +24,15 @@ $easing-fn: cubic-bezier(0.215, 0.61, 0.355, 1);
 $easing-time-fn: 0.3s cubic-bezier(0.215, 0.61, 0.355, 1);
 
 // Resets the margin and padding for an element.
-@mixin reset-margin-and-padding {
+@mixin reset-margin-and-padding($padding: true) {
   -webkit-margin-before: 0;
   -webkit-margin-after: 0;
   -webkit-margin-start: 0;
   -webkit-margin-end: 0;
-  -webkit-padding-start: 0;
+
+  @if $padding {
+    -webkit-padding-start: 0;
+  }
 }
 
 // Media breakpoint stuff

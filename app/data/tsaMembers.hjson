@@ -1,0 +1,85 @@
+[
+  {
+    name: Kaila Lemons
+    isLeadership: true
+    title: President
+  },
+  {
+    name: Zachary Allen
+    isLeadership: true
+    title: Vice President
+  },
+  {
+    name: Calvin Watford
+    isLeadership: true
+    title: Secretary
+  },
+  {
+    name: Nathan Tymofichuck
+    isLeadership: true
+    title: Reporter
+  },
+  {
+    name: Reese Pelletier
+    isLeadership: true
+    title: Accountant
+  },
+  {
+    name: Dylan Buel
+    isLeadership: true
+    title: Seargent at Arms
+  },
+
+  {
+    name: Kameron S.
+    isActive: true
+  },
+  {
+    name: Emma S.
+    isActive: true
+  },
+  {
+    name: Makita E.
+    isActive: true
+  },
+  {
+    name: Scott M.
+    isActive: true
+  },
+  {
+    name: Jaren E.
+    isActive: true
+  },
+  {
+    name: Grant H.
+    isActive: true
+  },
+  {
+    name: Michael H.
+    isActive: true
+  },
+  
+  { name: "Aaron" },
+  { name: "Alex" },
+  { name: "Anna" },
+  { name: "Boston" },
+  { name: "Cesar" },
+  { name: "David" },
+  { name: "Drake" },
+  { name: "Isaac" },
+  { name: "Kegan" },
+  { name: "Landen" },
+  { name: "Nathan" },
+  { name: "Nicholas" },
+  { name: "Nick" },
+  { name: "Paxton" },
+  { name: "Preston" },
+  { name: "Riprey" },
+  { name: "Ruben" },
+  { name: "Sam" },
+  { name: "Sami" },
+  { name: "Shayna" },
+  { name: "Spencer" },
+  { name: "Tanner" },
+  { name: "Toby" }
+]

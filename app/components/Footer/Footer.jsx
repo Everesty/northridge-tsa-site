@@ -29,7 +29,7 @@ export default () => (
         </h5>
       </div>
       <div className="footer-box footer-icons">
-        <h5>Stalk Us</h5>
+        <h5>Find Us</h5>
         <a href="https://github.com/Everesty/northridge-tsa-site">
           <img src="/static/images/social_media/github_white_64.png" alt="GitHub Repository" />
         </a>

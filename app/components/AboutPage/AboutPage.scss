@@ -37,11 +37,7 @@
     }
 
     &.northridge {
-      background: linear-gradient(
-        90deg,
-        mix(map-get($colors, primary), map-get($colors, secondary), 50%),
-        map-get($colors, secondary)
-      );
+      background: map-get($colors, primary);
 
       .action-call {
         float: right;
@@ -64,11 +60,7 @@
     }
     &.tsa {
       text-align: right;
-      background: linear-gradient(
-        90deg,
-        map-get($colors, primary),
-        mix(map-get($colors, primary), map-get($colors, secondary), 50%)
-      );
+      background: map-get($colors, secondary);
 
       .action-call {
         float: left;

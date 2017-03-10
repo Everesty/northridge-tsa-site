@@ -30,18 +30,18 @@ body {
 @mixin header-sizes($large-size, $medium-size, $small-size) {
   font-size: $large-size;
   line-height: $large-size;
-  margin-top: $large-size/2;
+  margin-top: $large-size * 2/3;
 
   @include break(medium) {
     font-size: $medium-size;
     line-height: $medium-size;
-    margin-top: $medium-size/2;
+    margin-top: $medium-size * 2/3;
   }
 
   @include break(small) {
     font-size: $small-size;
     line-height: $small-size;
-    margin-top: $small-size/2;
+    margin-top: $small-size * 2/3;
   }
 }
 
@@ -81,6 +81,8 @@ hr {
   border: none;
   border-bottom: 1px solid #ccc;
 
+  clear: both;
+
   &.wide-divider {
     background: linear-gradient(90deg, map-get($colors, primary), map-get($colors, secondary));
 
@@ -102,4 +104,12 @@ hr {
   @include break(small) {
     width: map-get($content-sizes, small);
   }
+}
+
+.side-note {
+  font-size: 1rem;
+}
+
+.arrow {
+  font-family: 'Rubik Mono One', cursive;
 }

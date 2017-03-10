@@ -1,0 +1,199 @@
+@import '../../globals';
+
+#AboutNorthridgePage {
+  .teacher-list > .teacher-row {
+    height: 10rem;
+    padding: 2.5rem;
+
+    &:hover {
+      background-color: #ddd;
+    }
+
+    @include break(medium) {
+      height: 8.5rem;
+      padding: 2rem;
+    }
+
+    @include break(small) {
+      height: 7rem;
+      padding: 1.5rem;
+    }
+
+    & > a {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+
+      color: #000;
+      text-decoration: none;
+
+      & > img {
+        width: 10rem;
+        height: 10rem;
+        border-radius: 100%;
+
+        @include break(medium) {
+          width: 8.5rem;
+          height: 8.5rem;
+        }
+
+        @include break(small) {
+          width: 7rem;
+          height: 7rem;
+        }
+      }
+
+      & > .name {
+        width: 15rem;
+
+        font-weight: 700;
+        text-align: center;
+      }
+
+      & > .name, & > .short-desc {
+        line-height: 10rem;
+
+        @include break(medium) {
+          width: 12.5rem;
+
+          line-height: 8.5rem;
+        }
+
+        @include break(small) {
+          width: 10rem;
+
+          line-height: 7rem;
+        }
+      }
+    }
+  }
+
+  .teacher {
+    & > .teacher-half-and-half {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+
+      & > div {
+        & > img {
+          width: 25rem;
+          margin-right: 1rem;
+
+          @include break(medium) {
+            width: 20rem;
+          }
+
+          @include break(small) {
+            width: 15rem;
+          }
+        }
+
+        & > a.back-link {
+          float: right;
+        }
+      }
+    }
+
+    & > hr {
+      clear: both;
+    }
+
+    & > .course-list {
+      @each $i in (6, 5, 4, 2) {
+        &.course-amount-#{$i} {
+          @for $j from 1 through $i {
+            & > .course:nth-child(#{$j}) > .course-name {
+              background-color: mix(
+                map-get($colors, secondary),
+                map-get($colors, primary),
+                percentage(($j - 1)/($i - 1))
+              );
+            }
+          }
+        }
+      }
+
+      & > .course {
+        background-color: transparent;
+
+        width: 100%;
+        margin: 0.5rem;
+
+        &.open {
+          background-color: #ddd;
+        }
+
+        & > .course-name {
+          color: #fff;
+
+          padding: 0.5rem;
+
+          font-weight: 700;
+
+          cursor: pointer;
+        }
+
+        & > div {
+          padding: 0.5rem;
+
+          & > ul {
+            @include reset-margin-and-padding(false);
+          }
+        }
+      }
+    }
+  }
+
+  .jumbo-image {
+    position: relative;
+    width: 100%;
+    height: 30rem;
+
+    overflow: hidden;
+
+    & > img {
+      position: absolute;
+      width: 100%;
+      top: -50%;
+      z-index: -1;
+    }
+
+    & > .title {
+      background: rgba(0, 0, 0, 0.3);
+      color: #fff;
+      
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+
+      font-family: 'Rubik Mono One', cursive;
+      font-size: 4rem;
+      text-align: center;
+      line-height: 30rem;
+
+      @include break(medium) {
+        height: 25rem;
+
+        font-size: 3rem;
+        line-height: 25rem;
+      }
+
+      @include break(small) {
+        height: 20rem;
+        
+        font-size: 2.5rem;
+        line-height: 20rem;
+      }
+    }
+
+    @include break(medium) {
+      height: 25rem;
+    }
+
+    @include break(small) {
+      height: 20rem;
+    }
+  }
+}

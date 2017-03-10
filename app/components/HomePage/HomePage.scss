@@ -52,6 +52,8 @@
 
       flex: 0 0 auto;
 
+      cursor: pointer;
+
       @include break(medium) {
         width: 12.5rem;
         height: 12.5rem;
