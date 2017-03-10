@@ -109,6 +109,19 @@ module.exports = function webpackConfig(env) {
               fallback: 'style-loader'
             })
             : ['style-loader', 'css-loader', 'sass-loader']
+        },
+        {
+          test: /\.md$/,
+          use: [
+            {
+              loader: 'html-loader',
+              options: {
+                attrs: false,
+                minimize: isProduction
+              }
+            },
+            'markdown-loader'
+          ]
         }
       ]
     },
