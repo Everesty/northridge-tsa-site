@@ -27,8 +27,7 @@ unnoticed, so here's lovely list of lovely people:
   * [`webpack-dev-server`](https://www.npmjs.com/package/webpack-dev-server)
   * [`babel-loader`](https://www.npmjs.com/package/babel-loader)
   * [`css-loader`](https://www.npmjs.com/package/css-loader)
-  * [`html-loader`](https://www.npmjs.com/package/html-loader)
-  * [`markdown-loader`](https://www.npmjs.com/package/markdown-loader)
+  * [`raw-loader`](https://www.npmjs.com/package/raw-loader)
   * [`sass-loader`](https://www.npmjs.com/package/sass-loader)
   * [`copy-webpack-plugin`](https://www.npmjs.com/package/copy-webpack-plugin)
   * [`extract-text-webpack-plugin`](https://www.npmjs.com/package/extract-text-webpack-plugin)
@@ -54,4 +53,5 @@ unnoticed, so here's lovely list of lovely people:
   * [`eslint-plugin-react`](https://www.npmjs.com/package/eslint-plugin-react)
 * And other modules put forth by the lovely [NPM](https://npm.org) community.
   * [`cross-env`](https://www.npmjs.com/package/cross-env); used in the scripts defined in the `package.json` file to set environment variables (like `NODE_ENV`).
+  * [`markdown-it`](https://www.npmjs.com/package/markdown-it)
 

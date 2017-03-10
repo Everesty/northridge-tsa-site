@@ -86,6 +86,7 @@ module.exports = function webpackConfig(env) {
     },
     output: {
       path: path.resolve(__dirname, 'dist/'),
+      publicPath: '/',
       filename: '[name].bundle.js'
     },
 
@@ -112,16 +113,11 @@ module.exports = function webpackConfig(env) {
         },
         {
           test: /\.md$/,
-          use: [
-            {
-              loader: 'html-loader',
-              options: {
-                attrs: false,
-                minimize: isProduction
-              }
-            },
-            'markdown-loader'
-          ]
+          loader: 'raw-loader'
+        },
+        {
+          test: /\.hjson$/,
+          loader: path.resolve(__dirname, 'loaders/hjsonLoader.js')
         }
       ]
     },
