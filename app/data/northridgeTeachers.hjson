@@ -4,8 +4,8 @@
     id: moreno
     website: http://www.davis.k12.ut.us/Domain/11087
     email: nmoreno@dsdmail.net
-    photo: /static/images/teachers/moreno.jpg
-    photoSquare: /static/images/teachers/moreno_square.jpg
+    photo: /static/images/teachers/moreno.png
+    photoSquare: /static/images/teachers/moreno_square.png
     room: /static/images/northridge/moreno_lab.jpg
     courses: {
       "Robotics 1": {
@@ -204,8 +204,8 @@
     id: bitner
     website: http://www.davis.k12.ut.us/Domain/10953
     email: dbitner@dsdmail.net
-    photo: /static/images/teachers/bitner.jpg
-    photoSquare: /static/images/teachers/bitner_square.jpg
+    photo: /static/images/teachers/bitner.png
+    photoSquare: /static/images/teachers/bitner_square.png
     courses: {
       "AP Computer Science Principles": {
         prerequisites: [ "None" ],
@@ -285,8 +285,8 @@
     id: harris
     website: http://www.davis.k12.ut.us/Domain/11090
     email: kaeharris@dsdmail.net
-    photo: /static/images/teachers/harris.jpg
-    photoSquare: /static/images/teachers/harris_square.jpg
+    photo: /static/images/teachers/harris.png
+    photoSquare: /static/images/teachers/harris_square.png
     courses: {
       "CE Introduction to Engineering Design": {
         prerequisites: [ "None" ],
@@ -345,8 +345,8 @@
     id: bell
     website: http://www.davis.k12.ut.us/page/4456
     email: cbell@dsdmail.net
-    photo: /static/images/teachers/bell.jpg
-    photoSquare: /static/images/teachers/bell_square.jpg
+    photo: /static/images/teachers/bell.png
+    photoSquare: /static/images/teachers/bell_square.png
     courses: {
       "CE Advanced Web Design": {
         prerequisites: [ "None" ],
@@ -446,8 +446,8 @@
     id: miller
     website: http://www.davis.k12.ut.us/Page/62008
     email: almiller@dsdmaill.net
-    photo: /static/images/teachers/miller.jpg
-    photoSquare: /static/images/teachers/miller_square.jpg
+    photo: /static/images/teachers/miller.png
+    photoSquare: /static/images/teachers/miller_square.png
     courses: []
     shortDesc: Not a teacher, but an honorable mention.
     description: 

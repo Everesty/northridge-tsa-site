@@ -25,12 +25,14 @@ $easing-time-fn: 0.3s cubic-bezier(0.215, 0.61, 0.355, 1);
 
 // Resets the margin and padding for an element.
 @mixin reset-margin-and-padding($padding: true) {
+  margin: 0;
   -webkit-margin-before: 0;
   -webkit-margin-after: 0;
   -webkit-margin-start: 0;
   -webkit-margin-end: 0;
 
   @if $padding {
+    padding: 0;
     -webkit-padding-start: 0;
   }
 }
