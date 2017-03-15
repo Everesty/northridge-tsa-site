@@ -38,7 +38,7 @@ export default () => (
         </a>
       </div>
       <span>
-        Created with ❤ by Calvin Watford, Dylan Buel, and Nathan Tymofichuck,&nbsp;
+        Created with ❤ by Calvin Watford, Dylan Buel, and Nathan Tymofichuk,&nbsp;
         <Link to="/credits">and other lovely creators.</Link>
       </span>
     </div>
